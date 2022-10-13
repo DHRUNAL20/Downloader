@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-image: url('bckgrnd.jpg');
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+    background-color: black;
+    align-items: center;
+    opacity: 0.5;
+}
+
+header h2 {
+    color: pink;
+    border-bottom: 3px solid pink;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: pink;
+    border-bottom: 3px solid pink;
+}
+
+section {
+    width: 875px;
+    height: 550px;
+    background-color: black;
+    opacity: 0.5;
+    /* margin-top: 10px;
+margin-left: 10px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #666;
+    border-radius: 32px;
+
+}
+
+.desc{
+    color: white;
+    font-size: x-large;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 50vw;
+    text-align: justify;
+}
+
+section h1 {
+    color: pink;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+section .link-container,
+.format-container,
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 500px;
+
+}
+
+section .link-container label,
+.format-container label {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: pink;
+}
+
+section .link-container input,
+.format-container select {
+    outline: none;
+    height: 40px;
+    border-radius: 32px;
+    padding-left: 10px;
+    border: 2px solid #666;
+    font-size: 14px;
+}
+
+section .button-container button {
+    height: 50px;
+    border-radius: 7px;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    background-color: blue;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+    section {
+        width: 550px;
+        height: 610px;
+    }
+
+    section .link-container,
+    .format-container,
+    .button-container,
+    .desc {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    section {
+        width: 350px;
+        height: 610px;
+        margin-top: 50px;
+    }
+
+    section .link-container,
+    .format-container,
+    .button-container,
+    .desc {
+        width: 300px;
+    }
+}

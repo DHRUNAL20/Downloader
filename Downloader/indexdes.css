@@ -1,0 +1,122 @@
+body{
+    background-image: url('bckgrnd.jpg'); 
+}
+
+#mainbox{
+    background-color: black;
+    height: 550px;
+    width: 880px;
+    margin:auto;
+    margin-top: 64px;
+    border-radius: 32px;
+    opacity: 0.5;
+    cursor: default;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+#dvdr{
+    border-left: 6px solid white;
+    height: 400px;
+    margin-left: 436px;
+    margin-top: 48px;
+}
+
+#content-left{
+    background-color: black;
+    opacity: 1;
+    height: 400px;
+    width: 400px;
+    margin-left: 28.8px;
+    margin-top: -432px;
+}
+
+#content-left p{
+    color: white;
+    font-size: x-large;
+    margin-top: 32px;
+    cursor: default;
+}
+
+#content-right{
+    background-color: black;
+    opacity: 1;
+    height: 400px;
+    width: 400px;
+    margin-left: 448px;
+    padding-left: 15px;
+    margin-top: -400px;
+}
+
+#content-right label{
+    color: white;
+    font-size: x-large;
+    
+}
+
+.link{
+    margin-top: 16px;
+    border-radius: 32px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    width: 386px;
+    height: 56px;
+}
+
+.format{
+    width: 386px;
+    margin-top: 16px;
+    border-radius: 32px;
+    height: 56px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+}
+
+.btn{
+    width: 75%;
+    height: 56px;
+    margin-top: 48px;
+    margin-left: 48px;
+    border-radius: 16px;
+    background-color: blue;
+    color: white;
+}
+
+.footer{
+    background-color: palevioletred;
+    height: 48px;
+    margin-top: 41.6px;
+    text-align: center;
+    padding-top: 8px;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 880px) {
+    mainbox {
+        width: 500px;
+        height: 450px;
+    }
+
+    mainbox .link-container,
+    .format-container,
+    .button-container {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    mainbox {
+        width: 350px;
+        height: 450px;
+        margin-top: 50px;
+    }
+
+    mainbox .link-container,
+    .format-container,
+    .button-container {
+        width: 300px;
+    }
+}
